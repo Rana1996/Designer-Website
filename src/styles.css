@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-family: sans-serif;
+  background-color: #151414;
+}
+h2 {
+  color: white;
+}
+div {
+  text-align: left;
+  color: white;
+}
+.fade-text {
+  color: #979797;
+}
+.bold-text {
+  fontSize: 18px;
+  font-weight: 500;
+}
+
+.left{
+  text-after-overflow: left;
+  text-align: left;
+}
+
+.regular-text{
+  /*display: -ms-flexbox;*/
+  /*display: flex;*/
+  /*overflow: visible;*/
+  /*max-width: none;*/
+  /*padding-right: 5%;*/
+  /*padding-left: 5%;*/
+  /*clear: both;*/
+  /*display:inline-block;*/
+  /*position:relative;*/
+  /*text-align: left;*/
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+}
+
+.heading-main {
+  /*max-width: 710px;*/
+  /*margin-top: 0%;*/
+  /*margin-bottom: 6%;*/
+  opacity: 1;
+  font-family: "Playfair Display";
+  color: #fff;
+  font-size: 30px;
+  /*line-height: 115%;*/
+  font-weight: 200;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
