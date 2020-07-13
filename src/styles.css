@@ -15,7 +15,7 @@ div {
   color: #979797;
 }
 .bold-text {
-  fontSize: 18px;
+  fontSize: 20px;
   font-weight: 500;
 }
 
@@ -25,29 +25,16 @@ div {
 }
 
 .regular-text{
-  /*display: -ms-flexbox;*/
-  /*display: flex;*/
-  /*overflow: visible;*/
-  /*max-width: none;*/
-  /*padding-right: 5%;*/
-  /*padding-left: 5%;*/
-  /*clear: both;*/
-  /*display:inline-block;*/
-  /*position:relative;*/
-  /*text-align: left;*/
+  color: white;
   font-size: 18px;
   font-family: Poppins, sans-serif;
 }
 
 .heading-main {
-  /*max-width: 710px;*/
-  /*margin-top: 0%;*/
-  /*margin-bottom: 6%;*/
   opacity: 1;
   font-family: "Playfair Display";
   color: #fff;
-  font-size: 30px;
-  /*line-height: 115%;*/
+  font-size: 34px;
   font-weight: 200;
 }
 .center {
