@@ -1,0 +1,11 @@
+#bloc1 {
+  text-align: left;
+  flex-basis: 40%;
+  order: 2;
+}
+#bloc2 {
+  text-align: left;
+  flex-basis: 50%;
+  box-sizing: border-box;
+  order: 1;
+}

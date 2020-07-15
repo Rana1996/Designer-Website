@@ -1,0 +1,13 @@
+<div id="block_container">
+  <div id="bloc1">
+    <span class="heading-main">{{ content.title }}</span><br>
+    <br><br>
+    <span class="regular-text">{{ content.subTitle }}</span>
+    <br><br>
+    <app-white-btn [url]="content.url"></app-white-btn>
+  </div>
+  <div id="bloc2">
+    <app-image-clock [_imgID]="content.imgID"></app-image-clock>
+  </div>
+</div>
+

@@ -41,3 +41,22 @@ div {
   display: flex;
   justify-content: center;
 }
+.section{
+  display: inline-block;
+  hight: 100%;
+}
+#block_container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 6%;
+  align-items: center;
+}
+#bloc1, #bloc2 {
+  text-align: left;
+  background-color: transparent;
+  flex-basis: 45%;
+  box-sizing: border-box;
+}
