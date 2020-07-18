@@ -1,4 +1,5 @@
 import {Component, HostListener} from "@angular/core";
+import {SectionsContentService} from "./providers/sections-content.service";
 
 @Component({
   selector: "app-root",
@@ -6,9 +7,14 @@ import {Component, HostListener} from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  innerWidth: any;
+  numbers = [];
+  innerHeight: any;
+  sections: any;
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.innerWidth = window.innerWidth;
+    this.innerHeight = window.innerHeight;
+  }
+  constructor(private _sectionContent: SectionsContentService) {
+    this.sections = _sectionContent.getSections();
   }
 }

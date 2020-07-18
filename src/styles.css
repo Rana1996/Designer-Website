@@ -7,14 +7,15 @@ body {
 h2 {
   color: white;
 }
-div {
-  text-align: left;
-  color: white;
-}
+/*div {*/
+/*  text-align: left;*/
+/*  color: white;*/
+/*}*/
 .fade-text {
   color: #979797;
 }
 .bold-text {
+  color: white;
   fontSize: 20px;
   font-weight: 500;
 }
@@ -45,18 +46,14 @@ div {
   display: inline-block;
   hight: 100%;
 }
+
 #block_container {
-  text-align: center;
   display: flex;
   justify-content: space-between;
   margin-right: 8%;
   margin-left: 8%;
-  margin-top: 6%;
   align-items: center;
-}
-#bloc1, #bloc2 {
   text-align: left;
-  background-color: transparent;
-  flex-basis: 45%;
   box-sizing: border-box;
+  height: calc(100vh - 24px);
 }

@@ -1,13 +1,12 @@
 <div id="block_container">
-  <div id="bloc1">
-    <span class="heading-main">{{ content.title }}</span><br>
+  <div id="b1" [style]="{'order': order1}">
+    <span class="heading-main">{{ section.title }}</span><br>
     <br><br>
-    <span class="regular-text">{{ content.subTitle }}</span>
+    <span class="regular-text">{{ section.subTitle }}</span>
     <br><br>
-    <app-white-btn [url]="content.url"></app-white-btn>
+    <app-white-btn [url]="section.url"></app-white-btn>
   </div>
-  <div id="bloc2">
-    <app-image-clock [_imgID]="content.imgID"></app-image-clock>
+  <div id="b2"  [style]="{'order': order2}">
+    <app-image-block [_imgID]="section.imgID"></app-image-block>
   </div>
 </div>
-

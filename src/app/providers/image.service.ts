@@ -10,5 +10,6 @@ export class ImageService {
 }
 const ImagesDetails = [
   {"id": "Profile", "url": "assets/images/Profile.jpeg"},
+  {"id": "trying", "url": "assets/images/trying.jpg"},
   {"id": "trying", "url": "assets/images/trying.jpg"}
 ];
