@@ -2,7 +2,13 @@
 html,
 body {
   font-family: sans-serif;
-  background-color: #151414;
+  margin: 0;
+  /*background-repeat: repeat;*/
+  /*background-size: calc(50vh);*/
+  /*background-color: #151414;*/
+  /*background-position:;*/
+  /*background: linear-gradient(#151414, transparent) no-repeat top, linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC) repeat fixed bottom;*/
+  /*background: linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC);*/
 }
 h2 {
   color: white;
@@ -44,8 +50,16 @@ h2 {
 }
 .section{
   display: inline-block;
-  hight: 100%;
+  width: 100vw;
+  /*background: linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC);*/
 }
+
+.section:first-child, .section:last-child {
+  background-color: #151414;
+}
+/*.section:nth-child(2){*/
+/*  background: linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC);*/
+/*}*/
 
 #block_container {
   display: flex;
@@ -55,5 +69,5 @@ h2 {
   align-items: center;
   text-align: left;
   box-sizing: border-box;
-  height: calc(100vh - 24px);
+  height: 100vh;
 }

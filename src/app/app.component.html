@@ -1,16 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!--<app-page-blocks></app-page-blocks>-->
-<!--<div class="section">-->
-<!--  <app-main-section></app-main-section>-->
-<!--</div>-->
+<div class="section">
+  <app-main-section [isFirst]="true"></app-main-section>
+</div>
 
-<app-main-section></app-main-section>
-<!--
-    <div class="profile-image" [ngStyle]="{'background-image': 'url(src/assets/images' + imgPath + ')'}"></div>-->
-<!---->
-<cdk-virtual-scroll-viewport [itemSize]="innerHeight">
+<div *ngFor="let section of sections index as i" class="section">
+  <div [ngStyle]="{'background': backgrounds[i]}"><app-page-section [section]="section"></app-page-section></div>
+</div>
 
-</cdk-virtual-scroll-viewport>
-<div *ngFor="let section of sections">
-  <app-page-section [section]="section"></app-page-section>
+<div class="section">
+  <app-main-section [isFirst]="false"></app-main-section>
 </div>
