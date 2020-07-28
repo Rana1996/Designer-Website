@@ -1,27 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
 html,
 body {
   font-family: sans-serif;
   margin: 0;
   overflow: -moz-scrollbars-none;
-  /*background-repeat: repeat;*/
-  /*background-size: calc(50vh);*/
-  /*background-color: #151414;*/
-  /*background-position:;*/
-  /*background: linear-gradient(#151414, transparent) no-repeat top, linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC) repeat fixed bottom;*/
-  /*background: linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC);*/
 }
 
 h2 {
   color: white;
 }
-/*div {*/
-/*  text-align: left;*/
-/*  color: white;*/
-/*}*/
+
 .fade-text {
   color: #979797;
 }
+
 .bold-text {
   color: white;
   fontSize: 20px;
@@ -58,15 +49,10 @@ h2 {
   transition-property: background;
   transition-duration: 3s;
   transition-timing-function: ease-in;
-  /*data-aos*/
-  /*background: linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC);*/
 }
 .section:first-child, .section:last-child {
   background-color: #151414;
 }
-/*.section:nth-child(2){*/
-/*  background: linear-gradient(#F6FAF9, #8EF3F1, #72EAE1, #4CDDCC);*/
-/*}*/
 
 #block_container {
   display: flex;

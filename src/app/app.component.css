@@ -4,7 +4,6 @@ div {
 
 virtual-scroller {
   width: 100vw;
-  /*--height: ${sections.height};*/
   height: calc(6 * 100vh);
   margin: 0;
   overflow: hidden;

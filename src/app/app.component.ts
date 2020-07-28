@@ -19,6 +19,7 @@ export class AppComponent {
   onResize(event) {
     this.innerHeight = window.innerHeight;
   }
+
   constructor(private sanitizer: DomSanitizer,
               private _sectionContent: SectionsContentService,
               private _backgrounds: BackgroundsService) {
