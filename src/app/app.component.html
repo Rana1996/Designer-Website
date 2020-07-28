@@ -1,11 +1,15 @@
-<div class="section">
-  <app-main-section [isFirst]="true"></app-main-section>
-</div>
 
-<div *ngFor="let section of sections index as i" class="section">
-  <div [ngStyle]="{'background': backgrounds[i]}"><app-page-section [section]="section"></app-page-section></div>
-</div>
+<virtual-scroller #scroll [items]="sections">
+  <div class="section">
+    <app-main-section [isFirst]="true"></app-main-section>
+  </div>
 
-<div class="section">
-  <app-main-section [isFirst]="false"></app-main-section>
-</div>
+  <div *ngFor="let section of scroll.viewPortItems index as i">
+    <div [ngStyle]="{'background': backgrounds[i]}" class="section"><app-page-section [section]="section"></app-page-section></div>
+  </div>
+
+  <div class="section">
+    <app-main-section [isFirst]="false"></app-main-section>
+  </div>
+</virtual-scroller>
+

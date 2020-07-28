@@ -10,6 +10,7 @@ import { ImageClockComponent } from './image-block/image-block.component';
 import { PageSectionComponent } from './page-section/page-section.component';
 // import {SafeHtmlPipe} from "./cutom-pipe";
 import {ScrollingModule} from "@angular/cdk/scrolling";
+import {VirtualScrollerModule} from "ngx-virtual-scroller";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
     PageSectionComponent,
     // SafeHtmlPipe,
   ],
-  imports: [BrowserModule, RouterModule, ScrollingModule],
+    imports: [BrowserModule, RouterModule, ScrollingModule, VirtualScrollerModule],
   providers: [ImageService],
   bootstrap: [AppComponent]
 })
