@@ -5,3 +5,14 @@
 #bloc1, #bloc2 {
   flex-basis: 45%;
 }
+
+.text-button {
+  display: inline-block;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+
+.text-button:hover {
+  color: aquamarine;
+}

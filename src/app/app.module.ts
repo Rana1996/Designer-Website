@@ -8,7 +8,6 @@ import {RouterModule, Scroll} from "@angular/router";
 import {ImageService} from "./providers/image.service";
 import { ImageClockComponent } from './image-block/image-block.component';
 import { PageSectionComponent } from './page-section/page-section.component';
-// import {SafeHtmlPipe} from "./cutom-pipe";
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {VirtualScrollerModule} from "ngx-virtual-scroller";
 
@@ -19,7 +18,6 @@ import {VirtualScrollerModule} from "ngx-virtual-scroller";
     MainSectionComponent,
     ImageClockComponent,
     PageSectionComponent,
-    // SafeHtmlPipe,
   ],
     imports: [BrowserModule, RouterModule, ScrollingModule, VirtualScrollerModule],
   providers: [ImageService],
