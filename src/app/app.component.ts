@@ -49,7 +49,7 @@ export class AppComponent implements OnInit{
     this.backgrounds.push(result);
   }
 
-  //TODO: change virtual scroller hight to be dynamic
+  //TODO: change virtual scroller height to be dynamic
   // @HostBinding("attr.style")
   // public get valueAsStyle(): any {
   //   return this.sanitizer.bypassSecurityTrustStyle(`--height: ${this.sections.length}`);

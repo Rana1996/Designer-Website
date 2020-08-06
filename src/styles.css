@@ -52,6 +52,7 @@ h2 {
 }
 .section:first-child, .section:last-child {
   background-color: #151414;
+  height: 125vh;
 }
 
 #block_container {
@@ -62,5 +63,5 @@ h2 {
   align-items: center;
   text-align: left;
   box-sizing: border-box;
-  height: 100vh;
+  height: 120vh;
 }
