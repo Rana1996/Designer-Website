@@ -1,3 +1,6 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 
 <virtual-scroller #scroll [items]="sections">
   <div class="section">
@@ -5,7 +8,9 @@
   </div>
 
   <div *ngFor="let section of scroll.viewPortItems index as i">
-    <div [ngStyle]="{'background': backgrounds[i]}" class="section"><app-page-section [section]="section"></app-page-section></div>
+    <div [ngStyle]="{'background': backgrounds[i]}"
+         class="section">
+      <app-page-section [section]="section"></app-page-section></div>
   </div>
 
   <div class="section">

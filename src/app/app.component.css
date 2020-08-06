@@ -8,3 +8,7 @@ virtual-scroller {
   margin: 0;
   overflow: hidden;
 }
+
+app-page-section{
+  -webkit-animation: fadein 2s;
+}

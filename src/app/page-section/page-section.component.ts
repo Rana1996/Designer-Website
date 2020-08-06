@@ -11,7 +11,8 @@ export class PageSectionComponent implements OnInit {
   order1: any;
   order2: any;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     let id = this.section.id;
@@ -19,6 +20,7 @@ export class PageSectionComponent implements OnInit {
     console.log('##################### In page section - section.imgId: ' + this.section.imgID);
     this.order2 = String(id % 2 + 1);
     this.order1 = String((id + 1) % 2 + 1);
+    this.section.subTitle = this.section.subTitle.replace("\n", "<br>");
   }
 
 }

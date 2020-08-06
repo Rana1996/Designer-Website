@@ -4,3 +4,7 @@
 #b2{
   flex-basis: 55%;
 }
+#bloc2 img {
+  object-fit: contain;
+}
+

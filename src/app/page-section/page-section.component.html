@@ -2,7 +2,7 @@
   <div id="b1" [style]="{'order': order1}">
     <span class="heading-main">{{ section.title }}</span><br>
     <br><br>
-    <span class="regular-text">{{ section.subTitle }}</span>
+    <span class="regular-text" [innerHTML]="section.subTitle"></span>
     <br><br>
     <app-white-btn [url]="section.url"></app-white-btn>
   </div>

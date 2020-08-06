@@ -2,6 +2,7 @@ import {Component, HostBinding, HostListener, OnInit} from "@angular/core";
 import {SectionsContentService} from "./providers/sections-content.service";
 import {BackgroundsService} from "./providers/backgrounds.service";
 import {DomSanitizer} from "@angular/platform-browser";
+import * as AOS from 'aos';
 
 @Component({
   selector: "app-root",
@@ -18,8 +19,7 @@ export class AppComponent implements OnInit{
     this.innerHeight = window.innerHeight;
   }
 
-  ngOnInit(){
-    // AOS.init();
+  ngOnInit(): void {
   }
 
   constructor(private sanitizer: DomSanitizer,
