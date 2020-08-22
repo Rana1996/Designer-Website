@@ -1,8 +1,7 @@
-import {Component, HostBinding, HostListener, OnInit} from "@angular/core";
+import {Component, HostListener, OnInit} from "@angular/core";
 import {SectionsContentService} from "./providers/sections-content.service";
 import {BackgroundsService} from "./providers/backgrounds.service";
 import {DomSanitizer} from "@angular/platform-browser";
-import * as AOS from 'aos';
 
 @Component({
   selector: "app-root",
@@ -11,9 +10,11 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit{
   innerHeight: any;
+  sectionCount: number;
   sections: any;
   private _backgroundsList: any;
   backgrounds: any;
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.innerHeight = window.innerHeight;
@@ -25,6 +26,10 @@ export class AppComponent implements OnInit{
   constructor(private sanitizer: DomSanitizer,
               private _sectionContent: SectionsContentService,
               private _backgrounds: BackgroundsService) {
+
+    window.scrollTo(0, 0);
+    this.innerHeight = window.innerHeight;
+    this.sectionCount = 1;
     this.sections = _sectionContent.getSections();
     this._backgroundsList = _backgrounds.getBackgrounds();
     this.backgrounds = [];
@@ -41,20 +46,25 @@ export class AppComponent implements OnInit{
         c2 = ", " + background.color3;
         if(!!background.color4){
           c2 = ", " + background.color4;
-        }
-      }
-    }
+        }}}
 
     let result = c1 + c2 + c3 + c4 + ')';
     this.backgrounds.push(result);
   }
 
-  //TODO: change virtual scroller height to be dynamic
-  // @HostBinding("attr.style")
-  // public get valueAsStyle(): any {
-  //   return this.sanitizer.bypassSecurityTrustStyle(`--height: ${this.sections.length}`);
-  // }
-  // @HostListener("window:scroll", [])
-  // onWindowScroll() {
-  // }//linear-gradient(135deg, #F6FAF9, #8EF3F1, #72EAE1, #4CDDCC)
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event) {
+    const scroll = window.pageYOffset;
+    let sectionHeight = this.innerHeight * 1.5;
+
+    //Updating sectionCount
+    this.sectionCount = Math.floor((scroll + this.innerHeight * 0.5) / sectionHeight );
+
+    //Updating background
+    if(this.sectionCount == 0 || this.sectionCount === (this.backgrounds.length + 1)){
+      document.body.style.background = "#151414";
+    } else
+      document.body.style.background = this.backgrounds[this.sectionCount - 1];
+  }
+
 }

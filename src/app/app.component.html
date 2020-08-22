@@ -2,19 +2,24 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 
-<virtual-scroller #scroll [items]="sections">
-  <div class="section">
-    <app-main-section [isFirst]="true"></app-main-section>
-  </div>
+<div (scroll)="onScroll($event)">
+<!--  <virtual-scroller #scroll [items]="sections" (scroll)="onScroll($event)">-->
+    <div class="section">
+      <app-main-section [isFirst]="true"></app-main-section>
+    </div>
 
-  <div *ngFor="let section of scroll.viewPortItems index as i">
-    <div [ngStyle]="{'background': backgrounds[i]}"
-         class="section regular-section">
-      <app-page-section [section]="section"></app-page-section></div>
-  </div>
+    <div *ngFor="let section of sections index as i">
+      <div class="section regular-section">
+        <div class="spaceHolder"></div>
+        <app-page-section [section]="section"></app-page-section></div>
+    </div>
 
-  <div class="section">
-    <app-main-section [isFirst]="false"></app-main-section>
-  </div>
-</virtual-scroller>
+    <div class="spaceHolder"></div>
 
+    <div class="section">
+      <app-main-section [isFirst]="false"></app-main-section>
+    </div>
+<!--  </virtual-scroller>-->
+
+</div>
+<!--scroll.viewPortItems-->

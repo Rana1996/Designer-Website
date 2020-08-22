@@ -13,9 +13,7 @@ export class ImageClockComponent implements OnInit {
   constructor(private _image: ImageService) { }
 
   ngOnInit(): void {
-    console.log('##################### : In image block - _imgID: ' + this._imgID);
     this.image = this._image.getImage(this._imgID);
-    console.log('##################### : In image block - image: ' + this.image);
   }
 
 }

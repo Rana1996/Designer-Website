@@ -12,3 +12,10 @@ virtual-scroller {
 app-page-section{
   -webkit-animation: fadein 2s;
 }
+
+.spaceHolder {
+  color: salmon;
+  width: 50px;
+  margin: 0;
+  height: calc(0.5 * 100vh);
+}

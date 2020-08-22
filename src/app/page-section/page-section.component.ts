@@ -16,8 +16,6 @@ export class PageSectionComponent implements OnInit {
 
   ngOnInit(): void {
     let id = this.section.id;
-    console.log('##################### In page section - id: ' + id);
-    console.log('##################### In page section - section.imgId: ' + this.section.imgID);
     this.order2 = String(id % 2 + 1);
     this.order1 = String((id + 1) % 2 + 1);
     this.section.subTitle = this.section.subTitle.replace(/\n/g, "<br>");

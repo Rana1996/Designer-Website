@@ -17,7 +17,6 @@ export class MainSectionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('##################### isFirst: ' + typeof(this.isFirst));
     if(this.isFirst){
       this.title = "Gal Yosef - ";
       this.fadedTitle = "Product Designer";
