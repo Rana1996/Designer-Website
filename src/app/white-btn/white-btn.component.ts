@@ -8,6 +8,8 @@ import { Component, OnInit , Input } from '@angular/core';
 export class WhiteBtnComponent implements OnInit {
   @Input() url : string;
 
+  email: "rana1996am@gmail.com";
+
   hover: boolean;
 
   buttonConfig = {
@@ -28,7 +30,8 @@ export class WhiteBtnComponent implements OnInit {
   };
 
   onTextBtnClick() {
-    window.open(this.url, "_blank");
+    location.href = "mailto:galpeleg192@gmail.com?subject=hello&body=fggf";
+    window.open("mailto:galpeleg192@gmail.com?subject=hello&body=fggf", '_self');
   }
 
   constructor() { }
