@@ -19,3 +19,14 @@ app-page-section{
   margin: 0;
   height: calc(0.5 * 100vh);
 }
+
+.infoButton {
+  border: darkgray 2px;
+  /*justify-content: flex-end;*/
+  /*child-align: right;*/
+  padding: 0.5%;
+  text-align: right;
+  border-radius: 50%;
+  background-color: #151414;
+  color: darkgray;
+}

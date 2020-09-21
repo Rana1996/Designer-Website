@@ -3,10 +3,12 @@
 <script>AOS.init();</script>
 
 <div (scroll)="onScroll($event)">
-<!--  <virtual-scroller #scroll [items]="sections" (scroll)="onScroll($event)">-->
+
     <div class="section">
       <app-main-section [isFirst]="true"></app-main-section>
     </div>
+
+  <div class="infoButton"><button class="infoButton"> ! </button></div>
 
     <div *ngFor="let section of sections index as i">
       <div class="section regular-section">
@@ -19,7 +21,5 @@
     <div class="section">
       <app-main-section [isFirst]="false"></app-main-section>
     </div>
-<!--  </virtual-scroller>-->
 
 </div>
-<!--scroll.viewPortItems-->

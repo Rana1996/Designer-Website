@@ -10,6 +10,7 @@ import { ImageClockComponent } from './image-block/image-block.component';
 import { PageSectionComponent } from './page-section/page-section.component';
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {VirtualScrollerModule} from "ngx-virtual-scroller";
+import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {VirtualScrollerModule} from "ngx-virtual-scroller";
     MainSectionComponent,
     ImageClockComponent,
     PageSectionComponent,
+    InputUserDataFormComponent,
   ],
     imports: [BrowserModule, RouterModule, ScrollingModule, VirtualScrollerModule],
   providers: [ImageService],
