@@ -12,6 +12,7 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
 import {VirtualScrollerModule} from "ngx-virtual-scroller";
 import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
 import {AppRoutingModule, routingComponents} from "./app-routing.module";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import {AppRoutingModule, routingComponents} from "./app-routing.module";
     InputUserDataFormComponent,
     routingComponents
   ],
-    imports: [BrowserModule,
-      RouterModule,
-      ScrollingModule,
-      VirtualScrollerModule,
-      AppRoutingModule
-    ],
+  imports: [BrowserModule,
+    RouterModule,
+    ScrollingModule,
+    VirtualScrollerModule,
+    AppRoutingModule,
+    ReactiveFormsModule
+  ],
   providers: [ImageService],
   bootstrap: [AppComponent]
 })
