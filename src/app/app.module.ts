@@ -11,6 +11,7 @@ import { PageSectionComponent } from './page-section/page-section.component';
 import {ScrollingModule} from "@angular/cdk/scrolling";
 import {VirtualScrollerModule} from "ngx-virtual-scroller";
 import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
+import {AppRoutingModule, routingComponents} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -20,8 +21,14 @@ import { InputUserDataFormComponent } from './input-user-data-form/input-user-da
     ImageClockComponent,
     PageSectionComponent,
     InputUserDataFormComponent,
+    routingComponents
   ],
-    imports: [BrowserModule, RouterModule, ScrollingModule, VirtualScrollerModule],
+    imports: [BrowserModule,
+      RouterModule,
+      ScrollingModule,
+      VirtualScrollerModule,
+      AppRoutingModule
+    ],
   providers: [ImageService],
   bootstrap: [AppComponent]
 })
