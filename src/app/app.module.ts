@@ -13,6 +13,7 @@ import {VirtualScrollerModule} from "ngx-virtual-scroller";
 import { InputUserDataFormComponent } from './input-user-data-form/input-user-data-form.component';
 import {AppRoutingModule, routingComponents} from "./app-routing.module";
 import {ReactiveFormsModule} from "@angular/forms";
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     ImageClockComponent,
     PageSectionComponent,
     InputUserDataFormComponent,
-    routingComponents
+    routingComponents,
+    DataComponent
   ],
   imports: [BrowserModule,
     RouterModule,
