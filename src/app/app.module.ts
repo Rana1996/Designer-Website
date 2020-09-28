@@ -12,13 +12,15 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
 import {VirtualScrollerModule} from "ngx-virtual-scroller";
 import { InputUserDataFormComponent } from './components/sign-in-components/input-user-data-form/input-user-data-form.component';
 import {AppRoutingModule, routingComponents} from "./app-routing.module";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DataComponent } from './components/data-components/data/data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/data-components/header/header.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { EditSectionCardComponent } from './components/data-components/edit-section-card/edit-section-card.component';
 import {MatExpansionModule} from "@angular/material/expansion";
+import {MatIconModule} from "@angular/material/icon";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -42,7 +44,10 @@ import {MatExpansionModule} from "@angular/material/expansion";
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatIconModule,
+    FormsModule,
+    MatDividerModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]

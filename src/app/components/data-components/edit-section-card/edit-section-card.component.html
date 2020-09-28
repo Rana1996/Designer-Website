@@ -1,12 +1,35 @@
-<mat-expansion-panel (opened)="panelOpenState = true"
-                     (closed)="panelOpenState = false">
-  <mat-expansion-panel-header>
+<div id="place-holder"></div>
+<mat-expansion-panel
+  *ngFor="let section of sections"
+  (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
     <mat-panel-title>
-      Self aware panel
+      Section {{ section.id }}
     </mat-panel-title>
-    <mat-panel-description>
-      Currently I am {{panelOpenState ? 'open' : 'closed'}}
-    </mat-panel-description>
+      <mat-panel-description>
+        {{ section.title }}
+      </mat-panel-description>
   </mat-expansion-panel-header>
-  <p>I'm visible because I am open</p>
+  <main id="editForm">
+    <primary-text>Title :</primary-text>
+    <mat-divider></mat-divider>
+    {{ section.title }}
+    <div id="place-holder"></div>
+
+    <primary-text>Description :</primary-text>
+    <mat-divider></mat-divider>
+    {{ section.subTitle }}
+    <div id="place-holder"></div>
+
+    <primary-text>Image Url :</primary-text>
+    <mat-divider></mat-divider>
+    {{ section.url }}
+    <div id="place-holder"></div>
+
+    <primary-text>Image Url :</primary-text>
+    <mat-divider></mat-divider>
+    {{ section.imgID }}
+    <div id="place-holder"></div>
+
+  </main>
 </mat-expansion-panel>

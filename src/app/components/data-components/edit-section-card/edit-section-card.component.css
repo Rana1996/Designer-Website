@@ -1,3 +1,11 @@
 .mat-form-field + .mat-form-field {
   margin-left: 8px;
 }
+
+#place-holder {
+  height: 1rem;
+}
+
+primary-text{
+  color: #3f51b5;
+}

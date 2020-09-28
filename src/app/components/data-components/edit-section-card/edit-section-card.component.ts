@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {Section} from "../../../models/section.model";
+import {SectionsContentService} from "../../../providers/sections-content.service";
+import {BackgroundsService} from "../../../providers/backgrounds.service";
 
 @Component({
   selector: 'app-edit-section-card',
@@ -6,10 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./edit-section-card.component.css']
 })
 export class EditSectionCardComponent implements OnInit {
-  // @Input() section: Section;
   panelOpenState = false;
+  sections: any;
 
-  constructor() { }
+  constructor(private _sectionContent: SectionsContentService,
+              private _backgrounds: BackgroundsService) {
+
+    this.sections = _sectionContent.getSections();
+  }
 
   ngOnInit(): void {
   }
