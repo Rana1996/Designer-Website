@@ -1,15 +1,29 @@
 <!--suppress ALL -->
-<div class="titleBlock" style="font-weight: bold; margin-rigt: 8%">
-  Changing Data
-</div>
+<app-header header="Changing Data"></app-header>
+
 <div id="data-block">
 
-  <div id="block1">
-    <p id="data-block-title">Section 1</p>
-  </div>
+  <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          This is the expansion title
+        </mat-panel-title>
+        <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+    <app-edit-section-card></app-edit-section-card>
+  </mat-accordion>
 
-  <div id="block2">
-    <p id="data-block-title">Click on object to change it</p>
-  </div>
+<!--  <div id="block1">-->
+<!--    <p id="data-block-title">Section 1</p>-->
+<!--  </div>-->
+
+<!--  <div id="block2">-->
+<!--    <p id="data-block-title">Click on object to change it</p>-->
+<!--  </div>-->
 
 </div>

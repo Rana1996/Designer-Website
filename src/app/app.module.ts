@@ -17,6 +17,8 @@ import { DataComponent } from './data/data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { EditSectionCardComponent } from './edit-section-card/edit-section-card.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     InputUserDataFormComponent,
     routingComponents,
     DataComponent,
-    HeaderComponent
+    HeaderComponent,
+    EditSectionCardComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]

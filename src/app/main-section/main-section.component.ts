@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {ImageService} from "../providers/image.service";
 
 @Component({
   selector: 'app-main-section',

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SectionsContentService} from "../providers/sections-content.service";
+import {BackgroundsService} from "../providers/backgrounds.service";
 
 @Component({
   selector: 'app-data',
@@ -6,12 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data.component.css']
 })
 export class DataComponent implements OnInit {
+  sections: any;
 
-  constructor() { }
+  constructor(private _sectionContent: SectionsContentService,
+              private _backgrounds: BackgroundsService) {
+
+    this.sections = _sectionContent.getSections();
+  }
 
   ngOnInit(): void {
-    document.body.style.background = '#ffffff';//'linear-gradient(135deg, #ffffff, ' + '#979797' + ')';
-    // document.body.getElementsByClassName('titleBlock').item(0)
+    document.body.style.background = '#ffffff';
   }
 
 }
