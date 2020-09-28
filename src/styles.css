@@ -47,7 +47,7 @@ h2 {
 }
 
 .section{
-  display: inline-block;
+  /*display: inline-block;*/
   width: 100vw;
 }
 
@@ -71,5 +71,8 @@ h2 {
 }
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.spaceHolder {
+  width: 50px;
+  margin: 0;
+  height: 50vh;
+}
