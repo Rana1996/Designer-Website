@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {DomSanitizer} from "@angular/platform-browser";
-import {SectionsContentService} from "../providers/sections-content.service";
-import {BackgroundsService} from "../providers/backgrounds.service";
+import {SectionsContentService} from "../../../providers/sections-content.service";
+import {BackgroundsService} from "../../../providers/backgrounds.service";
 
 @Component({
   selector: 'app-main-page',

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ImageService} from "../providers/image.service";
+import {ImageService} from "../../../providers/image.service";
 
 @Component({
   selector: 'app-image-block',

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {SectionsContentService} from "../providers/sections-content.service";
+import {SectionsContentService} from "../../../providers/sections-content.service";
 
 @Component({
   selector: 'app-page-section',

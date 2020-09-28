@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SectionsContentService} from "../providers/sections-content.service";
-import {BackgroundsService} from "../providers/backgrounds.service";
+import {SectionsContentService} from "../../../providers/sections-content.service";
+import {BackgroundsService} from "../../../providers/backgrounds.service";
 
 @Component({
   selector: 'app-data',
