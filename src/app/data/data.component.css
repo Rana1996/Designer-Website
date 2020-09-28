@@ -1,0 +1,31 @@
+#data-block {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 8%;
+  text-align: left;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+#block1, #block2 {
+  flex-basis: 45%;
+  display: flex;
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+  text-align: left;
+  box-sizing: border-box;
+  height: 80vh;
+  /*background-color: #979797;*/
+}
+
+#pink-text {
+  color: palevioletred;
+}
+
+#data-block-title {
+  font-size: 18px;
+  text-align: left;
+}

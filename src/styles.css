@@ -54,10 +54,22 @@ h2 {
 #block_container {
   display: flex;
   justify-content: space-between;
-  margin-right: 8%;
-  margin-left: 8%;
   align-items: center;
   text-align: left;
   box-sizing: border-box;
   height: 100vh;
+  margin-right: 8%;
+  margin-left: 8%;
 }
+
+.titleBlock {
+  justify-content: center;
+  display: flex;
+  margin: 2%;
+  width: 100vw;
+  font-size: 24px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

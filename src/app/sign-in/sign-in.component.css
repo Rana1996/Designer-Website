@@ -1,11 +1,3 @@
-.titleBlock {
-  justify-content: center;
-  color: darkgray;
-  display: flex;
-  margin: 2%;
-  width: 100vw;
-}
-
 .formBlock {
   flex: 1;
   height: 60vh;

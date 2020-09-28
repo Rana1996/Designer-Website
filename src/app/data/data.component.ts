@@ -10,6 +10,8 @@ export class DataComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.body.style.background = '#ffffff';//'linear-gradient(135deg, #ffffff, ' + '#979797' + ')';
+    // document.body.getElementsByClassName('titleBlock').item(0)
   }
 
 }

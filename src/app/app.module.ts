@@ -14,6 +14,9 @@ import { InputUserDataFormComponent } from './input-user-data-form/input-user-da
 import {AppRoutingModule, routingComponents} from "./app-routing.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import { DataComponent } from './data/data.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -24,14 +27,18 @@ import { DataComponent } from './data/data.component';
     PageSectionComponent,
     InputUserDataFormComponent,
     routingComponents,
-    DataComponent
+    DataComponent,
+    HeaderComponent
   ],
-  imports: [BrowserModule,
+  imports: [
+    BrowserModule,
     RouterModule,
     ScrollingModule,
     VirtualScrollerModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]
