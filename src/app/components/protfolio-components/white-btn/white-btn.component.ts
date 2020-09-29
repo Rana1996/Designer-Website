@@ -7,6 +7,7 @@ import { Component, OnInit , Input } from '@angular/core';
 })
 export class WhiteBtnComponent implements OnInit {
   @Input() url : string;
+  @Input() _text: string;
 
   email: "rana1996am@gmail.com";
 
@@ -26,17 +27,23 @@ export class WhiteBtnComponent implements OnInit {
       fontSize: '18px',
       fontFamily: 'Poppins, sans-serif',
     },
-    text: 'Let\'s talk'
+    text: 'Let\'s Talk'
   };
 
   onTextBtnClick() {
-    location.href = "mailto:galpeleg192@gmail.com?subject=hello&body=fggf";
-    window.open("mailto:galpeleg192@gmail.com?subject=hello&body=fggf", '_self');
+    if(this._text == 'Let\'s Talk') {
+      location.href = "mailto:galpeleg192@gmail.com?subject=hello&body=fggf";
+      window.open("mailto:galpeleg192@gmail.com?subject=hello&body=fggf", '_self');
+    }
+    else window.open(this.url, '_blank');
   }
 
   constructor() { }
 
   ngOnInit(): void {
+    if(this._text != 'Let\'s Talk') {
+      this.buttonConfig.text = this._text;
+    }
   }
 
 }
