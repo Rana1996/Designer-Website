@@ -76,3 +76,13 @@ h2 {
   margin: 0;
   height: 50vh;
 }
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.right {
+  align-items: end;
+  text-align: right;
+}

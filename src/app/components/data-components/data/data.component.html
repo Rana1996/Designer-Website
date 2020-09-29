@@ -1,7 +1,7 @@
 <!--suppress ALL -->
 <app-header header="Changing Data"></app-header>
 
-<div id="data-block">
+<div id="data-block" class="left">
 
   <mat-accordion>
     <mat-expansion-panel hideToggle>
@@ -9,20 +9,16 @@
         <mat-panel-title>
           Sections
         </mat-panel-title>
-<!--        <mat-panel-description>-->
-<!--        </mat-panel-description>-->
       </mat-expansion-panel-header>
       <p>Click on the section you want to edit.</p>
     </mat-expansion-panel>
     <app-edit-section-card></app-edit-section-card>
   </mat-accordion>
 
-<!--  <div id="block1">-->
-<!--    <p id="data-block-title">Section 1</p>-->
-<!--  </div>-->
+</div>
 
-<!--  <div id="block2">-->
-<!--    <p id="data-block-title">Click on object to change it</p>-->
-<!--  </div>-->
-
+<div id="data-block" class="right">
+  <button mat-fab color="accent">
+    <mat-icon>add</mat-icon>
+  </button>
 </div>
