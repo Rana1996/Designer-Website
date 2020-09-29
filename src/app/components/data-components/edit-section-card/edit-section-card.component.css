@@ -13,3 +13,8 @@
 mat-icon {
   font-size: 1rem;
 }
+
+#edit-field-title {
+  display: flex;
+  justify-content: space-between;
+}

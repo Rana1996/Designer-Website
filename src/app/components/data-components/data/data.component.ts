@@ -20,4 +20,8 @@ export class DataComponent implements OnInit {
     document.body.style.background = '#ffffff';
   }
 
+  addSection() {
+    //TODO
+  }
+
 }

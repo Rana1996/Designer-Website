@@ -11,23 +11,35 @@
       </mat-panel-description>
   </mat-expansion-panel-header>
   <main id="editForm">
-    <p>Title :</p>
+
+    <div id="edit-field-title">
+      <p>Title :</p>
+      <mat-icon (click)="openDialog()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+    </div>
     <mat-divider></mat-divider>
     <p>{{ section.title }}</p>
     <div id="place-holder"></div>
 
-    <p>Description :</p>
+    <div id="edit-field-title">
+      <p>Description :</p>
+      <mat-icon (click)="openDialog()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+    </div>
     <mat-divider></mat-divider>
     {{ section.subTitle }}
-<!--    <mat-icon color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>-->
     <div id="place-holder"></div>
 
-    <p>Image Url :</p>
+    <div id="edit-field-title">
+      <p>Image Url :</p>
+      <mat-icon (click)="openDialog()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+    </div>
     <mat-divider></mat-divider>
     {{ section.url }}
     <div id="place-holder"></div>
 
-    <p>Image Url :</p>
+    <div id="edit-field-title">
+      <p>Image Url :</p>
+      <mat-icon (click)="openDialog()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+    </div>
     <mat-divider></mat-divider>
     {{ section.imgID }}
     <div id="place-holder"></div>
