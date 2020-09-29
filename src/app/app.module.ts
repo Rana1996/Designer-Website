@@ -23,7 +23,6 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from "@angular/material/dialog";
-import { EditorDialogComponent } from './components/data-components/editor-dialog/editor-dialog.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +36,7 @@ import { EditorDialogComponent } from './components/data-components/editor-dialo
     DataComponent,
     HeaderComponent,
     EditSectionCardComponent,
-    EditorDialogComponent,
   ],
-  // entryComponents:[
-  //   EditorDialogComponent
-  // ],
   imports: [
     BrowserModule,
     RouterModule,
