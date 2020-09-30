@@ -1,8 +1,10 @@
 <div id="edit-field-title">
   <p>{{ title }} :</p>
-  <mat-icon (click)="editField()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+  <mat-icon *ngIf="!isEditMode" (click)="editField()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+  <mat-icon *ngIf="isEditMode" (click)="doneEditing()" color="accent" aria-hidden="false" aria-label="Example home icon">done</mat-icon>
 </div>
 <mat-divider></mat-divider>
 
-<p>{{ content }}</p>
+<p *ngIf="!isEditMode">{{ content }}</p>
+<app-edit-data-form *ngIf="isEditMode" [field_name]="title" (editMode)="changeEditMode($event)"> </app-edit-data-form>
 <div id="place-holder"></div>

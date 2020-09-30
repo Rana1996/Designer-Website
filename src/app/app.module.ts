@@ -24,6 +24,8 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from "@angular/material/dialog";
 import { EditDataFieldComponent } from './components/data-components/edit-data-field/edit-data-field.component';
+import {MatInputModule} from "@angular/material/input";
+import { EditDataFormComponent } from './components/data-components/edit-data-form/edit-data-form.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { EditDataFieldComponent } from './components/data-components/edit-data-f
     HeaderComponent,
     EditSectionCardComponent,
     EditDataFieldComponent,
+    EditDataFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { EditDataFieldComponent } from './components/data-components/edit-data-f
     FormsModule,
     MatDividerModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]
