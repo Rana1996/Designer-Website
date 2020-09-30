@@ -2,19 +2,6 @@
   margin-left: 8px;
 }
 
-#place-holder {
-  height: 1rem;
-}
-
 .primary-text{
   color: #3f51b5;
-}
-
-mat-icon {
-  font-size: 1rem;
-}
-
-#edit-field-title {
-  display: flex;
-  justify-content: space-between;
 }

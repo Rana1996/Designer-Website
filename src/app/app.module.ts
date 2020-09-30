@@ -23,6 +23,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from "@angular/material/dialog";
+import { EditDataFieldComponent } from './components/data-components/edit-data-field/edit-data-field.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     DataComponent,
     HeaderComponent,
     EditSectionCardComponent,
+    EditDataFieldComponent,
   ],
   imports: [
     BrowserModule,

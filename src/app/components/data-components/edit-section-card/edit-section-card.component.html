@@ -12,37 +12,10 @@
   </mat-expansion-panel-header>
   <main id="editForm">
 
-    <div id="edit-field-title">
-      <p>Title :</p>
-      <mat-icon (click)="edit ()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-    </div>
-    <mat-divider></mat-divider>
-    <p>{{ section.title }}</p>
-    <div id="place-holder"></div>
-
-    <div id="edit-field-title">
-      <p>Description :</p>
-      <mat-icon (click)="edit()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-    </div>
-    <mat-divider></mat-divider>
-    {{ section.subTitle }}
-    <div id="place-holder"></div>
-
-    <div id="edit-field-title">
-      <p>Image Url :</p>
-      <mat-icon (click)="edit()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-    </div>
-    <mat-divider></mat-divider>
-    {{ section.url }}
-    <div id="place-holder"></div>
-
-    <div id="edit-field-title">
-      <p>Image Url :</p>
-      <mat-icon (click)="edit()" color="accent" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
-    </div>
-    <mat-divider></mat-divider>
-    {{ section.imgID }}
-    <div id="place-holder"></div>
+    <app-edit-data-field title="Title" [content]="section.title"></app-edit-data-field>
+    <app-edit-data-field title="Description" [content]="section.subTitle"></app-edit-data-field>
+    <app-edit-data-field title="Show more Url" [content]="section.url"></app-edit-data-field>
+    <app-edit-data-field title="Image ID" [content]="section.imgID"></app-edit-data-field>
 
   </main>
 </mat-expansion-panel>

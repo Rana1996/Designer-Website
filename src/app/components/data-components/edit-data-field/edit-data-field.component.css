@@ -1,0 +1,12 @@
+#edit-field-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-icon {
+  font-size: 1rem;
+}
+
+#place-holder {
+  height: 1rem;
+}
