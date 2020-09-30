@@ -1,0 +1,25 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+<!--    <mat-label>Title</mat-label>-->
+    <input matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+           >
+<!--    <mat-hint>Errors appear instantly!</mat-hint>-->
+    <mat-error *ngIf="emailFormControl.hasError('text') && !emailFormControl.hasError('required')">
+      Please enter a valid {{ field_name }}
+    </mat-error>
+    <mat-error *ngIf="emailFormControl.hasError('required')">
+      {{ field_name }} is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</form>
+
+<div *ngIf="!askIfSave" class="right">
+  <button mat-button (click)="cancel()" color="primary">Cancel</button>
+  <button mat-button (click)="askToSave()" color="accent">Save</button>
+</div>
+
+<div *ngIf="askIfSave">
+  <p>Are you sure you want to save changes to the {{ field_name }} field?</p>
+  <button mat-button (click)="changedMyMind()" color="primary">No</button>
+  <button mat-button (click)="save()" color="accent">Yes!</button>
+</div>
