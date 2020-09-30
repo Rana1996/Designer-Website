@@ -5,3 +5,17 @@
 .primary-text{
   color: #3f51b5;
 }
+
+#editForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 8%;
+}
+
+app-edit-data-field {
+  width: 24rem;
+  height: 8rem;
+  margin-right: 8%;
+  margin-bottom: 4%;
+}
