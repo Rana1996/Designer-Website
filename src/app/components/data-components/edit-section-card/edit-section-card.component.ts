@@ -20,5 +20,8 @@ export class EditSectionCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  edit() {}
+
+
 }
 
