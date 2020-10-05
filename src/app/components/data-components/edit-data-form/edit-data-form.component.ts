@@ -18,7 +18,7 @@ export class EditDataFormComponent implements OnInit {
   @Input() field_name: string;
   @Output() editMode = new EventEmitter<boolean>();
   askIfSave: boolean;
-  emailFormControl = new FormControl('', [
+  textFormControl = new FormControl('', [
     Validators.required,
   ]);
 
@@ -36,13 +36,13 @@ export class EditDataFormComponent implements OnInit {
   }
 
   save() { //TODO - Save changed value after connecting to MongoDB
-    console.log('!!!!!!!! Before emit, value: ' + this.emailFormControl.value);
+    console.log('!!!!!!!! Before emit, value: ' + this.textFormControl.value);
     this.askIfSave = false;
     this.editMode.emit(false);
   }
 
   cancel() {
-    this.emailFormControl.reset();
+    this.textFormControl.reset();
     this.editMode.emit(false);
   }
 

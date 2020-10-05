@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {SectionsContentService} from "../../../providers/sections-content.service";
+import {Section} from "../../../models/section.model";
 
 @Component({
   selector: 'app-page-section',
@@ -7,7 +8,7 @@ import {SectionsContentService} from "../../../providers/sections-content.servic
   styleUrls: ['./page-section.component.css']
 })
 export class PageSectionComponent implements OnInit {
-  @Input() section: { imgID: string; id: number; title: string; url: string; subTitle: string };
+  @Input() section: Section;
   order1: any;
   order2: any;
 
@@ -18,7 +19,7 @@ export class PageSectionComponent implements OnInit {
     let id = this.section.id;
     this.order2 = String(id % 2 + 1);
     this.order1 = String((id + 1) % 2 + 1);
-    this.section.subTitle = this.section.subTitle.replace(/\n/g, "<br>");
+    this.section.description = this.section.description.replace(/\n/g, "<br>");
   }
 
 }

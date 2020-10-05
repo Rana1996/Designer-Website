@@ -1,11 +1,7 @@
-export class Section {
+export interface Section {
   readonly id: number;
   title: string;
   description: string;
-  imgUrl: string;
+  imgID: string;
   routeUrl: string;
-
-  constructor(_id: number) {
-    this.id = _id;
-  }
 }

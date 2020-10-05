@@ -2,9 +2,9 @@
   <div id="b1" [style]="{'order': order1}">
     <span class="heading-main">{{ section.title }}</span><br>
     <br><br>
-    <span class="regular-text" [innerHTML]="section.subTitle"></span>
+    <span class="regular-text" [innerHTML]="section.description"></span>
     <br><br>
-    <app-white-btn [url]="section.url" _text="Show more"></app-white-btn>
+    <app-white-btn [url]="section.routeUrl" _text="Show more"></app-white-btn>
   </div>
   <div id="b2"  [style]="{'order': order2}">
     <app-image-block [_imgID]="section.imgID"></app-image-block>
